@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$MAXXING | SHITCOIN MAXXING</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
+    body {
+      font-family: 'Press Start 2P', system-ui;
+    }
+
+    .live-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #22c55e15 0%, transparent 70%);
+    }
+
+    .floating-img {
+      position: absolute;
+      opacity: 0.15;
+      filter: blur(1px);
+      border: 2px solid #22c55e;
+      border-radius: 20px;
+      animation: zoomDrift linear infinite;
+    }
+
+    @keyframes zoomDrift {
+      0%   { transform: scale(0.6) rotate(0deg); opacity: 0.08; }
+      50%  { transform: scale(1.2) rotate(8deg); opacity: 0.22; }
+      100% { transform: scale(0.6) rotate(0deg); opacity: 0.08; }
+    }
+
+    .glitch {
+      animation: glitch 0.4s infinite;
+      text-shadow: 0 0 20px #22c55e, 0 0 40px #4ade80, 0 0 60px #86efac;
+    }
+    
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 3px); }
+      40% { transform: translate(-3px, -3px); }
+      60% { transform: translate(3px, 3px); }
+      80% { transform: translate(3px, -3px); }
+      100% { transform: translate(0); }
+    }
+
+    .sparkle { animation: sparkle 1.3s infinite; }
+    @keyframes sparkle { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+    .neon-button {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 25px #22c55e;
+    }
+    .neon-button:hover {
+      box-shadow: 0 0 40px #4ade80;
+      transform: translateY(-3px);
+    }
+
+    .tweet-box {
+      animation: floatGlow 6s ease-in-out infinite;
+    }
+    @keyframes floatGlow {
+      0%, 100% { transform: translateY(0); box-shadow: 0 0 40px #22c55e, 0 0 80px #4ade80; }
+      50% { transform: translateY(-15px); box-shadow: 0 0 60px #22c55e, 0 0 110px #4ade80; }
+    }
+  </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- LIVE BACKGROUND -->
+  <div class="live-bg">
+    <img src="https://i.imgur.com/xqBRahn.jpg" class="floating-img w-64 top-[10%] left-[5%] animate-[zoomDrift_25s_linear_infinite]">
+    <img src="https://i.imgur.com/xqBRahn.jpg" class="floating-img w-80 top-[25%] right-[8%] animate-[zoomDrift_32s_linear_infinite]" style="animation-delay: -8s;">
+    <img src="https://i.imgur.com/xqBRahn.jpg" class="floating-img w-52 bottom-[20%] left-[12%] animate-[zoomDrift_28s_linear_infinite]" style="animation-delay: -15s;">
+    <img src="https://i.imgur.com/xqBRahn.jpg" class="floating-img w-72 top-[55%] right-[15%] animate-[zoomDrift_35s_linear_infinite]" style="animation-delay: -22s;">
+    <img src="https://i.imgur.com/xqBRahn.jpg" class="floating-img w-48 bottom-[35%] left-[25%] animate-[zoomDrift_26s_linear_infinite]" style="animation-delay: -5s;">
+  </div>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center relative pt-20">
+    <div class="text-center z-10 px-6 max-w-4xl mx-auto">
+
+      <div class="flex justify-center mb-6">
+        <span class="text-[5.2rem] md:text-[6.8rem] glitch inline-block tracking-widest">$MAXXING</span>
+      </div>
+
+      <div class="text-5xl md:text-6xl font-bold text-emerald-400 tracking-widest mb-6 drop-shadow-[0_0_20px_#22c55e]">
+        SHITCOIN MAXXING
+      </div>
+
+      <p class="text-2xl md:text-3xl mb-12 text-white/90 leading-tight">
+        you need to be <span class="text-emerald-400 font-bold">shitcoin maxxing</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mb-10">
+        <a href="https://www.pump.fun/C9djW6sBteaHMcBgw4VMAL6TCEoXJnZtcUNdfozwSLeQ" 
+           target="_blank"
+           class="neon-button px-14 py-5 bg-black border-4 border-emerald-400 text-emerald-400 font-bold text-2xl rounded-2xl hover:bg-emerald-400 hover:text-black">
+          BUY $MAXXING
+        </a>
+        
+        <a href="https://www.tibane.net/staking/C9djW6sBteaHMcBgw4VMAL6TCEoXJnZtcUNdfozwSLeQ" 
+           target="_blank"
+           class="neon-button px-14 py-5 bg-black border-4 border-emerald-400 text-emerald-400 font-bold text-2xl rounded-2xl hover:bg-emerald-400 hover:text-black">
+          STAKE
+        </a>
+      </div>
+
+      <div class="inline-block bg-black/80 border border-emerald-400 rounded-2xl px-10 py-5 mb-12">
+        <p class="text-xs tracking-widest text-emerald-400 mb-2">CONTRACT ADDRESS</p>
+        <p class="font-mono text-sm text-white">C9djW6sBteaHMcBgw4VMAL6TCEoXJnZtcUNdfozwSLeQ</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto tweet-box rounded-3xl overflow-hidden border-4 border-emerald-400 bg-black">
+        <img src="https://i.imgur.com/xqBRahn.jpg" 
+             alt="Shitcoin Maxxing Manifesto"
+             class="w-full">
+      </div>
+
+    </div>
+
+    <div class="absolute top-12 left-12 text-5xl sparkle">✦</div>
+    <div class="absolute bottom-32 right
